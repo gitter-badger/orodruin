@@ -20,4 +20,6 @@ class User
   field :last_name,  type: String
   field :nickname,   type: String
   field :birthday,   type: Date
+
+  validates :nickname, presence: true, uniqueness: true
 end
