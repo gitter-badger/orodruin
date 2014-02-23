@@ -6,6 +6,7 @@ gem 'rails', '4.1.0.rc1'
 
 # Use Mongoid, as we shouldn't have complex relations
 gem 'mongoid', '~> 4.0.0.beta1'
+gem 'bson_ext'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
@@ -28,19 +29,22 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring', group: :development
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
 # Use unicorn as the app server
 # gem 'unicorn'
 
 # User management
-gem 'devise', '~> 3.2.3'
+gem 'devise', github: 'hauleth/devise', branch: 'fix-mongoid-10068' #'~> 3.2.3'
 gem 'cancan', '~> 1.6.10'
 gem 'rolify', '~> 3.4.0'
 
+# SEO (and user) friendly links
+gem 'mongoid_slug', '~> 3.2.0'
+
 # Simplify controllers by decent_exposure
 gem 'decent_exposure'
+
+# Simplify views using decorators
+gem 'draper', '~> 1.3.0'
 
 # Nicer views template engine
 gem 'slim-rails'
@@ -71,10 +75,14 @@ group :development do
 
   # Preview application flow in Chrome
   gem 'meta_request'
+
+  # STFU
+  gem 'quiet_assets'
 end
 
 # Fixtures replacement
-gem 'fabrication', group: [:development, :test]
+gem 'fabrication',  group: [:development,  :test]
+gem 'ffaker',       group: [:development,  :test]
 
 group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
