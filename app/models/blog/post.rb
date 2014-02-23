@@ -9,6 +9,10 @@ class Blog::Post
   validates :title, presence: true, length: { maximum: 256 }
   validates :content, presence: true
 
+  belongs_to :user
+
+  embeds_many :comments, class_name: 'Blog::Comment'
+
   def parse_content
     self[:content] = ContentParser.new.parse(content_raw)
   end
