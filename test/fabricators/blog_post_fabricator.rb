@@ -1,4 +1,4 @@
 Fabricator('Blog::Post') do
-  title       "MyString"
-  content_raw "MyString"
+  title       Faker::Lorem.words
+  content_raw Faker::Lorem.paragraphs
 end
