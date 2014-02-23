@@ -24,8 +24,9 @@ module Orodruin
     # config.i18n.default_locale = :de
 
     config.generators do |g|
-      g.test_framework      :test_unit
+      g.test_framework      :test_unit, fixture_replacement: :fabrication
       g.fixture_replacement :fabrication, dir: 'test/fabricators'
+
       g.helper              false
       g.stylesheets         false
       g.javascripts         false
