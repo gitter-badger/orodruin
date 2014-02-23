@@ -1,0 +1,6 @@
+*.jpg binary -delta
+*.png binary -delta
+
+*.eot binary -delta
+*.ttf binary -delta
+*.woff binary -delta
