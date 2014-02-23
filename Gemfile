@@ -34,6 +34,14 @@ gem 'spring', group: :development
 # Use unicorn as the app server
 # gem 'unicorn'
 
+# User management
+gem 'devise', '~> 3.2.3'
+#gem 'cancan'
+#gem 'rolify'
+
+# Simplify controllers by decent_exposure
+gem 'decent_exposure'
+
 # Nicer views template engine
 gem 'slim-rails'
 
@@ -62,7 +70,7 @@ group :development do
   gem 'brakeman', require: false
 
   # Preview application flow in Chrome
-  # gem 'meta_request'
+  gem 'meta_request'
 end
 
 # Fixtures replacement
