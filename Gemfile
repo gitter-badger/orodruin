@@ -36,8 +36,8 @@ gem 'spring', group: :development
 
 # User management
 gem 'devise', '~> 3.2.3'
-#gem 'cancan'
-#gem 'rolify'
+gem 'cancan', '~> 1.6.10'
+gem 'rolify', '~> 3.4.0'
 
 # Simplify controllers by decent_exposure
 gem 'decent_exposure'
