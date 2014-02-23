@@ -1,12 +1,13 @@
 class User
   include Mongoid::Document
+  rolify
 
   include Devise::Authenticatable
   include Devise::Confirmable
   include Devise::Rememberable
   include Devise::Recoverable
   # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
+  # :lockable, :timeoutable and :omniauthable
   devise :registerable
 
   ## Lockable
@@ -14,7 +15,9 @@ class User
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
 
+  # Basic user data
   field :first_name, type: String
   field :last_name,  type: String
   field :nickname,   type: String
+  field :birthday,   type: Date
 end
