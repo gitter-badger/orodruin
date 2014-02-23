@@ -38,7 +38,10 @@ gem 'spring', group: :development
 gem 'slim-rails'
 
 # From helpers
-gem 'simple_form'
+gem 'simple_form', '~> 3.0.1'
+
+# Lightweight markup language for blog posts (Markdown in this case)
+gem 'redcarpet', '~> 3.1.1'
 
 group :doc do
   gem 'yard', require: false
