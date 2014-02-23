@@ -1,6 +1,10 @@
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+require 'minitest/spec'
+
+# Nicer output
+require 'minitest/pride'
 
 # Coverage reports
 require 'simplecov'
@@ -8,6 +12,9 @@ require 'simplecov'
 # RR mocking library
 require 'rr'
 
+# Extra matchers
+require 'minitest/extra/matchers/subject'
+
 class ActiveSupport::TestCase
-  # Add more helper methods to be used by all tests here...
+  include Minitest::Extra::Matchers::Subject
 end
