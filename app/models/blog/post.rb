@@ -11,7 +11,7 @@ class Blog::Post
   validates :content, presence: true
   validates :content_raw, presence: true
 
-  #belongs_to :user
+  belongs_to :user
 
   embeds_many :comments, class_name: 'Blog::Comment'
 

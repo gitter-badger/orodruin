@@ -3,6 +3,8 @@ class Blog::PostsController < ApplicationController
   expose(:post, model: Blog::Post, attributes: :post_params)
 
   def create
+    post.user = current_user
+
     if post.save
       redirect_to post
     else
