@@ -2,4 +2,4 @@
 
 This is [styleguide][kss] for Orodruin project.
 
-[kss]: /kss/styleguide
+[kss]: /doc/styles/styleguide
