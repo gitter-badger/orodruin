@@ -1,0 +1,24 @@
+/*
+ * Style <button> and <.button> elements.
+ *
+ * :hover
+ * .default - default action button
+ * .warning - destructive action button
+ *
+ * Styleguide 1.1
+ */
+.button,
+button
+  padding: .5em
+
+  background: #ccc
+  color: #000
+  border:
+    radius: 5px
+    style: none
+  text-decoration: none
+
+  &.default
+    background: #0b3
+  &.warning
+    background: #c30
