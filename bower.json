@@ -2,6 +2,7 @@
   "name": "orodruin",
   "version": "0.0.0",
   "dependencies": {
-    "normalize-css": "~3.0.0"
+    "normalize-css": "~3.0.0",
+    "nprogress": "~0.1.2"
   }
 }
