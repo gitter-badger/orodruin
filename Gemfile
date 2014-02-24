@@ -68,6 +68,9 @@ group :development do
   # Better console
   gem 'jazz_hands'
 
+  # Stylesheets documentation
+  gem 'kss-rails'
+
   # Style checking
   gem 'rubocop'
 
