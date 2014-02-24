@@ -4,7 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   decent_configuration do
-    strategy DecentExposure::StrongParametersStrategy
+    # Decorate models if possible
     strategy DecoratedStrategy
+
+    # Use strong parameters
+    strategy DecentExposure::StrongParametersStrategy
   end
 end
