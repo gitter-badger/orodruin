@@ -6,8 +6,5 @@ class ApplicationController < ActionController::Base
   decent_configuration do
     # Decorate models if possible
     strategy DecoratedStrategy
-
-    # Use strong parameters
-    strategy DecentExposure::StrongParametersStrategy
   end
 end

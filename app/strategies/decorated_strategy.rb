@@ -1,4 +1,4 @@
-class DecoratedStrategy < DecentExposure::ActiveRecordStrategy
+class DecoratedStrategy < DecentExposure::StrongParameterStrategy
   def resource
     decorator = options[:decorator]
     instance = super
