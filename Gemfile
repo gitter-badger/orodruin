@@ -38,7 +38,7 @@ gem 'spring', group: :development
 
 # User management
 gem 'devise', github: 'hauleth/devise', branch: 'fix-mongoid-10068' #'~> 3.2.3'
-gem 'cancan', '~> 1.6.10'
+gem 'cancancan', '~> 1.7.0'
 gem 'rolify', '~> 3.4.0'
 
 # SEO (and user) friendly links
