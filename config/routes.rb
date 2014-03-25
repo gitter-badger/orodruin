@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   namespace :blog do
     resources :posts
+
+    root 'posts#index'
   end
 
   if Rails.env.development?
@@ -10,4 +12,6 @@ Rails.application.routes.draw do
       mount Kss::Engine => '/styles'
     end
   end
+
+  root to: 'blog/posts#index'
 end

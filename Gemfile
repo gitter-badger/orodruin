@@ -23,18 +23,21 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+# Turbolinks makes following links in your web application faster.
+# Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+# Spring speeds up development by keeping your application running in the
+# background. Read more: https://github.com/rails/spring
 gem 'spring', group: :development
 
 # Use unicorn as the app server
 # gem 'unicorn'
+gem 'puma'
 
 # User management
 gem 'devise', github: 'hauleth/devise', branch: 'fix-mongoid-10068' #'~> 3.2.3'
@@ -65,8 +68,11 @@ group :doc do
 end
 
 group :development do
+  # Easily manage runnables
+  gem 'foreman'
+
   # Better console
-  gem 'jazz_hands'
+  gem 'pry-rails'
 
   # Stylesheets documentation
   gem 'kss-rails'
