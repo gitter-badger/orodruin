@@ -22,4 +22,6 @@ class User
   field :birthday,   type: Date
 
   validates :nickname, presence: true, uniqueness: true
+
+  alias_method :to_s, :nickname
 end

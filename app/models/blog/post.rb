@@ -24,7 +24,7 @@ class Blog::Post
   def save(*opts)
     parse_content
 
-    super(*opts)
+    super
   end
 
   private
