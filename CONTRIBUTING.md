@@ -44,7 +44,7 @@ or wait till we choose one.
 
 We don't have place to store design papers, like PSD templates, yet.
 
-[airbnb]: https://github.com/airbnb/javascript "Airbnb JavaScript Style Guide() {"
+[airbnb]: https://github.com/airbnb/javascript "Airbnb JavaScript Style Guide"
 [bbatsov]: https://github.com/bbatsov/ruby-style-guide "A community-driven Ruby coding style guide"
 [idiomatic]: https://github.com/necolas/idiomatic-css "Idiomatic CSS"
 [issues]: https://github.com/hauleth/orodruin/issues/new "Report issue"
