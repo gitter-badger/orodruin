@@ -1,9 +1,11 @@
 /*
  * Style <button> and <.button> elements.
  *
- * :hover
- * .default - default action button
+ * .default - default button looks
+ * .primary - default action button
+ * .success - success button (i.e. after finishing action)
  * .warning - destructive action button
+ * .danger  - destructive action button
  *
  * Styleguide 1.1
  */
@@ -11,14 +13,12 @@
 button
   padding: .5em
 
-  background: #ccc
-  color: #000
+  background: $medium-gray-dark
+  color: $light-gray-light
   border:
     radius: 5px
     style: none
   text-decoration: none
 
-  &.default
-    background: #0b3
-  &.warning
-    background: #c30
+  &:hover
+    background: $medium-gray-light
