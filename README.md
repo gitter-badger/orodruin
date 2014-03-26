@@ -21,5 +21,52 @@ nice tool, but lack some flexibility and API for developers.
 Also I needed to create e-learning platform for volunteers, and SZIM doesn't
 provide any tool that will allow work them together.
 
+## Usage
+
+You will need:
+
+- \*NIX system to run (on Windows I suggest you to create VM)
+- [Bower][bower]
+- Ruby 2.1.1
+- Bundler
+
+The best way to install Ruby is using [rbenv][rbenv].
+
+1. Clone this repo using
+
+        git clone https://github.com/hauleth/orodruin.git
+
+2. Install all dependencies
+
+        bundle install
+        bower install
+
+3. Check if all tests pass
+
+        ./bin/rake test
+
+4. Run server
+
+        ./bin/foreman start
+
+5. Visit <http://localhost:5000>.
+
+## Contribution
+
+1. Fork repo
+3. Clone repo
+3. Create branch
+
+        git checkout -b my-new-cool-feature
+
+4. Write code & tests
+5. Check if all tests pass
+
+        ./bin/rake test
+
+6. Push & create pull request
+
 [SZIM]: http://projektszim.wordpress.com/ "System Zarządzania Imprezami Masowymi"
 [Pyrkon]: http://www.pyrkon.pl/ "Pyrkon - Poznań's Fantasy Convention'"
+[bower]: http://bower.io/
+[rbenv]: https://github.com/sstephenson/rbenv
