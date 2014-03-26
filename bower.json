@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "normalize-css": "~3.0.0",
-    "nprogress": "~0.1.2"
+    "nprogress": "~0.1.2",
+    "d3": "~3.4.4"
   }
 }
