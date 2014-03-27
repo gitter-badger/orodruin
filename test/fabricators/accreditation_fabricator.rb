@@ -1,0 +1,2 @@
+Fabricator(:accreditation) do
+end
