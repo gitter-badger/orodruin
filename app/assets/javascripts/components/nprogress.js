@@ -1,5 +1,5 @@
 //= require nprogress
-// jshint strict:false
+// jshint strict:false, undef:false
 
 $(document).on('page:fetch',    function() { NProgress.start();  });
 $(document).on('page:change',   function() { NProgress.done();   });
