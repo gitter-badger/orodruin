@@ -1,3 +1,3 @@
 Fabricator('Program::Room') do
-  name "MyText"
+  name 'MyText'
 end

@@ -28,5 +28,6 @@ class Blog::Post
   end
 
   private
+
   attr_writer :content
 end

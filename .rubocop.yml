@@ -1,0 +1,22 @@
+AllCops:
+  Excludes:
+    - bin/*
+    - config/**
+    - coverage/**
+    - db/**
+    - doc/**
+    - log/**
+    - public/**
+    - script/**
+    - tmp/**
+    - vendor/**
+  RunRailsCops: true
+
+LineLength:
+  Max: 80
+
+MethodCalledOnDoEndBlock:
+  Enabled: true
+
+Documentation:
+  Enabled: false

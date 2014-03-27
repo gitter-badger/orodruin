@@ -1,3 +1,3 @@
 Fabricator('Program::Section') do
-  name "MyString"
+  name 'MyString'
 end
