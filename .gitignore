@@ -16,3 +16,4 @@
 /log/*.log
 /tmp
 /vendor/assets/components/
+node_modules/
