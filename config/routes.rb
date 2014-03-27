@@ -13,5 +13,7 @@ Rails.application.routes.draw do
     end
   end
 
+  mount Orodruin::API => '/api'
+
   root to: 'blog/posts#index'
 end
