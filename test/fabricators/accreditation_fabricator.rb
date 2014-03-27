@@ -1,2 +1,0 @@
-Fabricator(:accreditation) do
-end
