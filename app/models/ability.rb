@@ -1,3 +1,12 @@
+# Private: Describe abilities
+#
+# This class describe abilities for user with given roles.
+#
+# It SHOULD NOT be used directly. Instead use CanCanCan gem.
+#
+# Example:
+#
+#     can? :edit, post #=> false if `current_user` cannot edit given post
 class Ability
   include CanCan::Ability
 
