@@ -1,4 +1,4 @@
-# Private: Describe abilities
+# Internal: Describe abilities
 #
 # This class describe abilities for user with given roles.
 #

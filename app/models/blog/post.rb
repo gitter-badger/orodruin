@@ -1,3 +1,10 @@
+# Public: Blog post
+#
+# This model describe single blog post. All posts are parsed using
+# {ContentParser#parse}.
+#
+# Field `content` is read-only and should not be directyly modified. It will
+# update automatically on save or after calling method {#parse_content}.
 class Blog::Post
   include Mongoid::Document
   include Mongoid::Timestamps

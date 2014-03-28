@@ -1,3 +1,7 @@
+# Public: Describe user with his/her credentials.
+#
+# User data with credentials. It is Devise model and is crucial for whole
+# system. Changes should not change public API in non-compatible way.
 class User
   include Mongoid::Document
   rolify

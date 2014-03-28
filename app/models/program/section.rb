@@ -1,3 +1,4 @@
+# Public: Program section
 class Program::Section
   include Mongoid::Document
 

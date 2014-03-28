@@ -1,4 +1,4 @@
-# Private: Store roles assigned to users.
+# Internal: Store roles assigned to users.
 #
 # This is DB model that store role names assigned to each user.
 #

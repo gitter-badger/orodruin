@@ -1,3 +1,6 @@
+# Internal: Set Devise recoverable
+#
+# Set recoverable flag and all needed fields.
 module Devise::Recoverable
   extend ActiveSupport::Concern
 

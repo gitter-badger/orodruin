@@ -12,11 +12,11 @@ AllCops:
     - vendor/**
   RunRailsCops: true
 
-LineLength:
-  Max: 80
-
 MethodCalledOnDoEndBlock:
   Enabled: true
 
 Documentation:
-  Enabled: false
+  Exclude:
+    - app/api/**
+    - app/controllers/**
+    - app/helpers/**

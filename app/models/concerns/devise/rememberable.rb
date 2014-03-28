@@ -1,3 +1,6 @@
+# Internal: Add Devise rememberable option
+#
+# Set rememberable flag and add all neded fields.
 module Devise::Rememberable
   extend ActiveSupport::Concern
 

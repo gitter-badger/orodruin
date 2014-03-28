@@ -1,3 +1,6 @@
+# Internal: Add Devise Confirmable support
+#
+# Set confirmable flag and set all neded fields.
 module Devise::Confirmable
   extend ActiveSupport::Concern
 

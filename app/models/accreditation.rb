@@ -1,8 +1,10 @@
 # Public: Store accreditation information.
 #
 # This model store information about visitor accreditation.
+#
 # Fields are:
-#  - type - store accreditation type (visitor, media, volunteer, etc.)
+#
+# - `type` - store accreditation type (visitor, media, volunteer, etc.)
 class Accreditation
   include Mongoid::Document
   include Mongoid::Timestamps
