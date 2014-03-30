@@ -26,8 +26,8 @@ creating pull-request, read this.
 ### JavaScript Developer
 
 - Use [JavaScript Style Guide][airbnb].
-- If any dependency needed, prefer using Bower than Bundler. Bower has greater
-  JS libraries database and is much cleaner.
+- If any dependency needed, prefer using [Bower][bower] than Bundler. Bower has
+  greater JS libraries database and is much cleaner.
 
 For now we don't have any linter or testing library linked. You can suggest one
 or wait till we choose one.
@@ -46,6 +46,7 @@ We don't have place to store design papers, like PSD templates, yet.
 
 [airbnb]: https://github.com/airbnb/javascript "Airbnb JavaScript Style Guide"
 [bbatsov]: https://github.com/bbatsov/ruby-style-guide "A community-driven Ruby coding style guide"
+[bower]: http://bower.io/
 [idiomatic]: https://github.com/necolas/idiomatic-css "Idiomatic CSS"
 [issues]: https://github.com/hauleth/orodruin/issues/new "Report issue"
 [kss]: http://warpspire.com/kss/ "Knyle Style Sheets"

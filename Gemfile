@@ -22,14 +22,14 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # API builder
 gem 'grape', '~> 0.6.1'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'
 
 # Use jquery as the JavaScript library
 #gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster.
 # Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -45,6 +45,12 @@ gem 'puma'
 gem 'devise', github: 'hauleth/devise', branch: 'fix-mongoid-10068' #'~> 3.2.3'
 gem 'cancancan', '~> 1.7.0'
 gem 'rolify', '~> 3.4.0'
+
+# OAuth sign up
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-google-oauth2'
 
 # SEO (and user) friendly links
 gem 'mongoid_slug', '~> 3.2.0'
