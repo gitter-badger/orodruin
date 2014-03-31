@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0.rc1'
+gem 'rails', '4.1.0.rc2'
 
 # Use Mongoid, as we shouldn't have complex relations
 gem 'mongoid', '~> 4.0.0.beta1'
 gem 'bson_ext'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.1'
+gem 'sass-rails', '~> 4.0.2'
 
 gem 'bourbon'
 gem 'neat'
