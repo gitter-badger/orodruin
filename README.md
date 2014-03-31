@@ -1,5 +1,7 @@
 # Orodruin
 
+[![Build Status](https://travis-ci.org/hauleth/orodruin.svg?branch=master)](https://travis-ci.org/hauleth/orodruin)
+
 Easy convention management system.
 
 It provides:
