@@ -57,8 +57,10 @@ The best way to install Ruby is using [rbenv][rbenv].
 
 ## Contribution
 
+Before anything read `CONTRIBUTION.md`.
+
 1. Fork repo
-3. Clone repo
+2. Clone repo
 3. Create branch
 
         git checkout -b my-new-cool-feature
@@ -72,5 +74,5 @@ The best way to install Ruby is using [rbenv][rbenv].
 
 [SZIM]: http://projektszim.wordpress.com/ "System Zarządzania Imprezami Masowymi"
 [Pyrkon]: http://www.pyrkon.pl/ "Pyrkon - Poznań's Fantasy Convention'"
-[bower]: http://bower.io/
-[rbenv]: https://github.com/sstephenson/rbenv
+[bower]: http://bower.io/ "Bower package manager"
+[rbenv]: https://github.com/sstephenson/rbenv "Ruby version manager"
