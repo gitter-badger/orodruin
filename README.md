@@ -1,6 +1,8 @@
 # Orodruin
 
 [![Build Status](https://travis-ci.org/hauleth/orodruin.svg?branch=master)](https://travis-ci.org/hauleth/orodruin)
+[![Dependency Status](https://gemnasium.com/hauleth/orodruin.svg)](https://gemnasium.com/hauleth/orodruin)
+
 
 Easy convention management system.
 
