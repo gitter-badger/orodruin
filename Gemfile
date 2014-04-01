@@ -70,6 +70,9 @@ gem 'simple_form', '~> 3.0.1'
 # Lightweight markup language for blog posts (Markdown in this case)
 gem 'redcarpet', '~> 3.1.1'
 
+# Allow social translations
+gem 'localeapp'
+
 group :doc do
   gem 'yard', require: false
   gem 'yard-tomdoc', require: false
@@ -113,5 +116,5 @@ group :test do
   gem 'rr', require: false
 
   # Coverage reports
-  gem 'simplecov', require: false
+  gem 'coveralls', require: false
 end
