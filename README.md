@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hauleth/orodruin.svg?branch=master)](https://travis-ci.org/hauleth/orodruin)
 [![Dependency Status](https://gemnasium.com/hauleth/orodruin.svg)](https://gemnasium.com/hauleth/orodruin)
-
+[![Coverage Status](https://coveralls.io/repos/hauleth/orodruin/badge.png)](https://coveralls.io/r/hauleth/orodruin)
 
 Easy convention management system.
 
