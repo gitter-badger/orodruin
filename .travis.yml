@@ -3,3 +3,5 @@ rvm:
   - 2.1.1
 services:
   - mongodb
+script:
+  bin/rake test:coverage

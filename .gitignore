@@ -20,3 +20,4 @@ node_modules/
 doc/
 .yardoc/
 coverage/
+.localeapp.localeapp
