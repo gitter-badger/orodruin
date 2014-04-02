@@ -14,10 +14,13 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
+/log/localeapp.yml
 /tmp
 /vendor/assets/components/
-node_modules/
-doc/
-.yardoc/
-coverage/
-.localeapp.localeapp
+/node_modules
+/doc
+
+/coverage
+
+/.yardoc
+.localeapp
