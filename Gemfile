@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0.rc2'
+gem 'rails', '4.1.0'
 
-# Use Mongoid, as we shouldn't have complex relations
-gem 'mongoid', '~> 4.0.0.beta1'
-gem 'bson_ext'
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -21,7 +19,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 
 # API builder
-gem 'grape', '~> 0.6.1'
+gem 'grape', '~> 0.7.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
@@ -42,7 +40,7 @@ gem 'spring', group: :development
 gem 'puma'
 
 # User management
-gem 'devise', github: 'hauleth/devise', branch: 'fix-mongoid-10068' #'~> 3.2.3'
+gem 'devise', '~> 3.2.3'
 gem 'cancancan', '~> 1.7.0'
 gem 'rolify', '~> 3.4.0'
 
@@ -51,9 +49,6 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
-
-# SEO (and user) friendly links
-gem 'mongoid_slug', '~> 3.2.0'
 
 # Simplify controllers by decent_exposure
 gem 'decent_exposure'
@@ -110,7 +105,7 @@ gem 'ffaker',       group: [:development,  :test]
 
 group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
-  gem 'minitest-spec-rails'
+  #gem 'minitest-spec-rails'
   gem 'minitest-extra-matchers'
   # Nicer mocking library
   gem 'rr', require: false

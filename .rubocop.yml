@@ -1,5 +1,5 @@
 AllCops:
-  Excludes:
+  Exclude:
     - bin/*
     - config/**
     - coverage/**
@@ -14,6 +14,9 @@ AllCops:
 
 MethodCalledOnDoEndBlock:
   Enabled: true
+
+ClassAndModuleChildren:
+  Enabled: false
 
 Documentation:
   Exclude:

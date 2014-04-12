@@ -1,33 +1,7 @@
-# Public: Describe user with his/her credentials.
-#
-# User data with credentials. It is Devise model and is crucial for whole
-# system. Changes should not change public API in non-compatible way.
-class User
-  include Mongoid::Document
+class User < ActiveRecord::Base
   rolify
-
-  include Devise::Authenticatable
-  include Devise::Confirmable
-  include Devise::Rememberable
-  include Devise::Recoverable
   # Include default devise modules. Others available are:
-  # :lockable, :timeoutable and :omniauthable
-  devise :registerable
-
-  ## Lockable
-  # field :failed_attempts, type: Integer, default: 0 # Only if lock strategy
-                                                      # is :failed_attempts
-  # field :unlock_token,    type: String # Only if unlock strategy is :email
-                                         # or :both
-  # field :locked_at,       type: Time
-
-  # Basic user data
-  field :first_name, type: String
-  field :last_name,  type: String
-  field :nickname,   type: String
-  field :birthday,   type: Date
-
-  validates :nickname, presence: true, uniqueness: true
-
-  alias_method :to_s, :nickname
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 end
