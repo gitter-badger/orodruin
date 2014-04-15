@@ -24,7 +24,7 @@ gem 'grape', '~> 0.7.0'
 gem 'jbuilder', '~> 2.0'
 
 # Use jquery as the JavaScript library
-#gem 'jquery-rails'
+# gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster.
 # Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -105,7 +105,7 @@ gem 'ffaker',       group: [:development,  :test]
 
 group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
-  #gem 'minitest-spec-rails'
+  # gem 'minitest-spec-rails'
   gem 'minitest-extra-matchers'
   # Nicer mocking library
   gem 'rr', require: false

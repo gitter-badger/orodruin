@@ -3,13 +3,6 @@
 # This class describe view behaviours of User model. All code that will contain
 # any view-related code should be placed here instead of model (which should
 # contain only logic-specific code).
-#
-# Example:
-#
-#     user = User.first.decorated
-#
-#     user.avatar_url
-#     # => https://secure.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
 class UserDecorator < Draper::Decorator
   delegate_all
 
@@ -17,6 +10,12 @@ class UserDecorator < Draper::Decorator
   #
   # options - hash containing URL options for Gravatar. Description of them can
   #   be found here https://gravatar.com/site/implement/images/
+  #
+  #
+  # Examples
+  #
+  #     user.avatar_url
+  #     #=> https://secure.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
   #
   # Returns URI string
   def avatar_url(options = {})
@@ -41,7 +40,7 @@ class UserDecorator < Draper::Decorator
   def avatar(html_options: {}, options: {})
     html_options = {
       alt:  object.to_s
-    }
+    }.merge(html_options)
 
     helpers.image_tag(avatar_url(options), html_options)
   end
