@@ -1,4 +1,6 @@
 h1= post.title
+.author
+  = post.author.nickname
 == post.content
 
 = link_to 'Edit', edit_blog_post_path(post) if can? :edit, post

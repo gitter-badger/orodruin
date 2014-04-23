@@ -1,0 +1,17 @@
+pl:
+  devise:
+    sessions:
+      user:
+        signed_in: 
+  helpers:
+    label:
+      user:
+        email: 
+        password: 
+        remember_me: 
+  mongoid:
+    attributes:
+      user:
+        email: Email
+        password: Password
+        remember_me: Remember me
