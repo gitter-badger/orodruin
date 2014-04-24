@@ -3,8 +3,7 @@ development:
   encoding: unicode
   database: orodruin_development
   pool: 5
-  #username: orodruin
-  #password:
+  username: hauleth
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -29,5 +28,4 @@ test:
   encoding: unicode
   database: orodruin_test
   pool: 5
-  #username: orodruin
-  #password:
+  username: <%= ENV['DB_USER'] || 'hauleth' %>
