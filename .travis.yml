@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - 2.1.1
-services:
-  - mongodb
+addons:
+  postgresql: '9.3'
 script:
   bin/rake test:coverage
