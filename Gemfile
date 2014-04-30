@@ -21,8 +21,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # API builder
 gem 'grape', '~> 0.7.0'
 # Build JSON APIs with ease.
-# Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'grape-entity'
 
 # Use jquery as the JavaScript library
 # gem 'jquery-rails'

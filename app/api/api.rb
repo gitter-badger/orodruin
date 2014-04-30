@@ -1,5 +1,5 @@
-class Orodruin::API < Grape::API
+class API < Grape::API
   version 'v1.0', using: :header, vendor: 'orodruin'
 
-  mount Orodruin::Users
+  mount Users
 end

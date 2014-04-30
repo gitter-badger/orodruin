@@ -104,6 +104,9 @@ GEM
       rack-accept
       rack-mount
       virtus (>= 1.0.0)
+    grape-entity (0.4.2)
+      activesupport
+      multi_json (>= 1.3.2)
     haml (4.0.5)
       tilt
     hashie (2.1.1)
@@ -111,9 +114,6 @@ GEM
     hike (1.2.3)
     i18n (0.6.9)
     ice_nine (0.11.0)
-    jbuilder (2.0.6)
-      activesupport (>= 3.0.0, < 5)
-      multi_json (~> 1.2)
     json (1.8.1)
     jwt (0.1.11)
       multi_json (>= 1.5)
@@ -321,7 +321,7 @@ DEPENDENCIES
   fabrication
   ffaker
   grape (~> 0.7.0)
-  jbuilder (~> 2.0)
+  grape-entity
   kss-rails
   localeapp
   meta_request
