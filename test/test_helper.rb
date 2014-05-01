@@ -13,8 +13,9 @@ require 'simplecov'
 require 'rr'
 
 # Extra matchers
-require 'minitest/extra/matchers/subject'
+require 'minitest/extra/matchers'
 
-class ActiveSupport::TestCase
+class MiniTest::Spec
   include Minitest::Extra::Matchers::Subject
+  include Minitest::Extra::Matchers::Received
 end

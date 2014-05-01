@@ -138,7 +138,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (5.3.3)
-    minitest-extra-matchers (0.0.5)
+    minitest-extra-matchers (0.0.6)
       minitest (>= 4.0)
     multi_json (1.9.3)
     multi_xml (0.5.5)

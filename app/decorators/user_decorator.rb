@@ -39,7 +39,7 @@ class UserDecorator < Draper::Decorator
   # Returns HTML safe tag containing object avatar
   def avatar(html_options: {}, options: {})
     html_options = {
-      alt:  object.to_s
+      alt:  object.name
     }.merge(html_options)
 
     helpers.image_tag(avatar_url(options), html_options)
