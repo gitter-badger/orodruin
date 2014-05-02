@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
+ruby '2.1.2'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0'
+gem 'rails', '4.1.1'
 
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '~> 4.0.3'
 
 gem 'bourbon'
 gem 'neat'
@@ -41,7 +43,7 @@ gem 'puma'
 
 # User management
 gem 'devise', '~> 3.2.3'
-gem 'cancancan', '~> 1.7.0'
+gem 'cancancan', '~> 1.8.0'
 gem 'rolify', '~> 3.4.0'
 
 # OAuth sign up

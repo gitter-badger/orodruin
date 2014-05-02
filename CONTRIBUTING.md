@@ -57,4 +57,4 @@ Feel free to participate.
 [issues]: https://github.com/hauleth/orodruin/issues/new "Report issue"
 [kss]: http://warpspire.com/kss/ "Knyle Style Sheets"
 [sass]: http://sass-lang.com/ "Syntactically Awesome Style Sheets"
-[gdrive]:
+[gdrive]: https://drive.google.com/folderview?id=0B0qkbxb2OVObVzJWdXlKUTZuZms&usp=sharing "Design files"

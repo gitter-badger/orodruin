@@ -1,4 +1,4 @@
 Fabricator(:participant) do
-  user       nil
+  user nil
   convention nil
 end

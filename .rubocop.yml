@@ -1,15 +1,15 @@
 AllCops:
   Exclude:
     - bin/*
-    - config/**
-    - coverage/**
-    - db/**
-    - doc/**
-    - log/**
-    - public/**
-    - script/**
-    - tmp/**
-    - vendor/**
+    - config/**/*
+    - coverage/**/*
+    - db/**/*
+    - doc/**/*
+    - log/**/*
+    - public/**/*
+    - script/**/*
+    - tmp/**/*
+    - vendor/**/*
   RunRailsCops: true
 
 MethodCalledOnDoEndBlock:
@@ -20,6 +20,6 @@ ClassAndModuleChildren:
 
 Documentation:
   Exclude:
-    - app/api/**
-    - app/controllers/**
-    - app/helpers/**
+    - app/api/**/*
+    - app/controllers/**/*
+    - app/helpers/**/*
