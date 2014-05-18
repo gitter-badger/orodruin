@@ -12,6 +12,8 @@ gem 'sass-rails', '~> 4.0.3'
 
 gem 'bourbon'
 gem 'neat'
+gem 'bitters'
+gem 'refills'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -24,6 +26,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'grape', '~> 0.7.0'
 # Build JSON APIs with ease.
 gem 'grape-entity'
+# API documentation
+gem 'grape-swagger'
 
 # Use jquery as the JavaScript library
 # gem 'jquery-rails'
@@ -37,8 +41,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # background. Read more: https://github.com/rails/spring
 gem 'spring', group: :development
 
-# Use unicorn as the app server
-# gem 'unicorn'
+# Use Puma as the app server
 gem 'puma'
 
 # User management
@@ -83,7 +86,7 @@ group :development do
   gem 'kss-rails'
 
   # Style checking
-  gem 'rubocop'
+  gem 'rubocop', require: false
 
   # Detect N+1 queries
   gem 'bullet'
@@ -96,11 +99,20 @@ group :development do
 
   # STFU
   gem 'quiet_assets'
+
+  # Automate things
+  gem 'guard'
+  gem 'guard-bower'
+  gem 'guard-brakeman'
+  gem 'guard-bundler'
+  gem 'guard-minitest'
+  gem 'guard-rubocop'
 end
 
 # Fixtures replacement
 gem 'fabrication',  group: [:development,  :test]
 gem 'ffaker',       group: [:development,  :test]
+gem 'konacha',      group: [:development,  :test]
 
 group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
@@ -109,6 +121,10 @@ group :test do
   # Nicer mocking library
   gem 'rr', require: false
 
+  gem 'poltergeist'
+
   # Coverage reports
   gem 'coveralls', require: false
+
+  gem 'database_cleaner'
 end

@@ -6,9 +6,6 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    nav.top.bar role='navigation'
-      h1
-        = link_to 'Orodruin', root_path
-      ul
-        li= link_to 'Blog', blog_posts_path
+    = render 'refills/navigation'
     == yield
+    = render 'refills/footer'
