@@ -15,7 +15,18 @@ require 'rr'
 # Extra matchers
 require 'minitest/extra/matchers'
 
+DatabaseCleaner.strategy = :transaction
+
 class MiniTest::Spec
   include Minitest::Extra::Matchers::Subject
   include Minitest::Extra::Matchers::Received
+  include Minitest::Extra::Matchers::Pending
+
+  before :each do
+    DatabaseCleaner.start
+  end
+
+  after :each do
+    DatabaseCleaner.clean
+  end
 end

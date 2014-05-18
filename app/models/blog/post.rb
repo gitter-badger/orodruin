@@ -1,3 +1,15 @@
 class Blog::Post < ActiveRecord::Base
   belongs_to :author, class_name: 'User'
+
+  before_save :parse_text
+
+  protected
+
+  def parse_text
+    parser = ContentParser.new
+
+    self[:text] = parser.call(text_raw)
+  end
+
+  def text=; end
 end

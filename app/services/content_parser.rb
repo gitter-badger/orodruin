@@ -10,7 +10,7 @@ class ContentParser
   # Parse given text.
   #
   # Returns parsed text.
-  def parse(text)
+  def call(text)
     parser.render(text)
   end
 
