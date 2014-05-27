@@ -72,6 +72,7 @@ gem 'redcarpet', '~> 3.1.1'
 
 # Allow social translations
 gem 'localeapp'
+gem 'rails-i18n', '~> 4.0.0'
 
 group :doc do
   gem 'yard', require: false

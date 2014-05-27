@@ -24,3 +24,6 @@
 
 /.yardoc
 .localeapp
+/config/locales/*
+
+!**/.keep
