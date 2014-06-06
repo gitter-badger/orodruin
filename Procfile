@@ -1,3 +1,3 @@
-web: bin/puma config.ru -p $PORT -C ./config/puma.rb
+web: bin/unicorn -c config/unicorn.rb -p $PORT
 
 # vi: syn=yaml

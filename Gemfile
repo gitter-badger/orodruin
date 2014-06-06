@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 
@@ -41,8 +39,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # background. Read more: https://github.com/rails/spring
 gem 'spring', group: :development
 
-# Use Puma as the app server
-gem 'puma'
+# Use Unicorn as the app server
+gem 'unicorn'
 
 # User management
 gem 'devise', '~> 3.2.3'
