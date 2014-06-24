@@ -1,6 +1,6 @@
 Fabricator('Blog::Post') do
-  text_raw 'MyString'
-  title 'MyString'
+  text_raw { Faker::Lorem.paragraphs(5) }
+  title { Faker::Lorem.sentence }
 
   author fabricator: :user
 end
