@@ -20,7 +20,7 @@ html
     meta name="msapplication-TileColor" content="#da532c"
     meta name="msapplication-TileImage" content="/mstile-144x144.png"
   body
-    = render 'refills/navigation'
-    == yield
-    = render 'refills/footer'
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = render 'components/navigation'
+    .container
+      == yield
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
