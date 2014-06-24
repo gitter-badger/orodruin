@@ -10,6 +10,7 @@
     "restangular": "~1.4.0",
     "momentjs": "~2.6.0",
     "offline": "~0.7.2",
-    "marked": "~0.3.2"
+    "marked": "~0.3.2",
+    "font-awesome": "~4.1.0"
   }
 }
