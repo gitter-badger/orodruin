@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/rails/activejob.git
+  revision: 53b07ea4f5ed7d341c97329bfcf2a6404249c52f
+  specs:
+    activejob (4.2.0.alpha)
+      activemodel-globalid
+      activesupport (>= 4.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -17,6 +25,9 @@ GEM
     activemodel (4.1.1)
       activesupport (= 4.1.1)
       builder (~> 3.1)
+    activemodel-globalid (0.1.1)
+      activemodel (>= 4.1.0)
+      activesupport (>= 4.1.0)
     activerecord (4.1.1)
       activemodel (= 4.1.1)
       activesupport (= 4.1.1)
@@ -37,7 +48,7 @@ GEM
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
-    brakeman (2.6.0)
+    brakeman (2.6.1)
       erubis (~> 2.6)
       fastercsv (~> 1.5)
       haml (>= 3.0, < 5.0)
@@ -49,12 +60,12 @@ GEM
       slim (>= 1.3.6, < 3.0)
       terminal-table (~> 1.4)
     builder (3.2.2)
-    bullet (4.10.0)
-      activesupport
-      uniform_notifier (~> 1.6.0)
+    bullet (4.13.0)
+      activesupport (>= 3.0.0)
+      uniform_notifier (>= 1.6.0)
     callsite (0.0.11)
-    cancancan (1.8.3)
-    capybara (2.3.0)
+    cancancan (1.9.1)
+    capybara (2.4.1)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
@@ -69,10 +80,10 @@ GEM
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
-    coffee-script (2.2.0)
+    coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.7.0)
+    coffee-script-source (1.7.1)
     colorize (0.7.3)
     coveralls (0.7.0)
       multi_json (~> 1.3)
@@ -98,7 +109,7 @@ GEM
       request_store (~> 1.0.3)
     equalizer (0.0.9)
     erubis (2.7.0)
-    execjs (2.2.0)
+    execjs (2.2.1)
     fabrication (2.11.3)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
@@ -106,11 +117,11 @@ GEM
     ffaker (1.24.0)
     ffi (1.9.3)
     formatador (0.2.5)
-    gli (2.11.0)
-    grape (0.7.0)
+    gli (2.12.0)
+    grape (0.8.0)
       activesupport
       builder
-      hashie (>= 1.2.0)
+      hashie (>= 2.1.0)
       multi_json (>= 1.3.2)
       multi_xml (>= 0.5.2)
       rack (>= 1.3.0)
@@ -146,10 +157,10 @@ GEM
       rubocop (~> 0.20)
     haml (4.0.5)
       tilt
-    hashie (2.1.2)
+    hashie (3.2.0)
     highline (1.6.21)
     hike (1.2.3)
-    i18n (0.6.9)
+    i18n (0.6.11)
     ice_nine (0.11.0)
     json (1.8.1)
     jwt (1.0.0)
@@ -169,25 +180,25 @@ GEM
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    localeapp (0.8.0)
+    localeapp (0.8.1)
       gli
       i18n
       json
       rack
       rest-client
       ya2yaml
-    lumberjack (1.0.7)
+    lumberjack (1.0.9)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meta_request (0.3.0)
-      callsite
-      rack-contrib
-      railties
+    meta_request (0.3.4)
+      callsite (~> 0.0, >= 0.0.11)
+      rack-contrib (~> 1.1)
+      railties (>= 3.0.0, < 5.0.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.6.0)
-    minitest (5.3.5)
+    minitest (5.4.0)
     minitest-extra-matchers (0.0.6)
       minitest (>= 4.0)
     multi_json (1.10.1)
@@ -196,36 +207,37 @@ GEM
     neat (1.5.1)
       bourbon (>= 3.1)
       sass (~> 3.2.19)
-    nokogiri (1.6.2.1)
+    netrc (0.7.7)
+    nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     oauth (0.4.7)
-    oauth2 (0.9.4)
+    oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (~> 1.2)
-    omniauth (1.2.1)
-      hashie (>= 1.2, < 3)
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
       rack (~> 1.0)
     omniauth-facebook (1.6.0)
       omniauth-oauth2 (~> 1.1)
-    omniauth-google-oauth2 (0.2.4)
-      omniauth (~> 1.0)
+    omniauth-google-oauth2 (0.2.5)
+      omniauth (> 1.0)
       omniauth-oauth2 (~> 1.1)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
-    omniauth-oauth2 (1.1.2)
+    omniauth-oauth2 (1.2.0)
       faraday (>= 0.8, < 0.10)
       multi_json (~> 1.3)
-      oauth2 (~> 0.9.3)
+      oauth2 (~> 1.0)
       omniauth (~> 1.2)
     omniauth-twitter (1.0.1)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
     orm_adapter (0.5.0)
-    parser (2.1.9)
+    parser (2.2.0.pre.3)
       ast (>= 1.1, < 3.0)
       slop (~> 3.4, >= 3.4.5)
     pg (0.17.1)
@@ -280,14 +292,15 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     redcarpet (3.1.2)
-    request_store (1.0.6)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
+    request_store (1.0.8)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     rolify (3.4.0)
     rr (1.1.2)
-    rubocop (0.23.0)
+    rubocop (0.24.1)
       json (>= 1.7.7, < 2)
-      parser (~> 2.1.9)
+      parser (>= 2.2.0.pre.3, < 3.0)
       powerpack (~> 0.0.6)
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.4)
@@ -310,12 +323,12 @@ GEM
     simple_form (3.0.2)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
-    simplecov (0.8.2)
+    simplecov (0.9.0)
       docile (~> 1.1.0)
       multi_json
       simplecov-html (~> 0.8.0)
     simplecov-html (0.8.0)
-    slim (2.0.2)
+    slim (2.0.3)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
     slim-rails (2.1.5)
@@ -323,7 +336,7 @@ GEM
       activesupport (>= 3.0, < 4.2)
       railties (>= 3.0, < 4.2)
       slim (~> 2.0)
-    slop (3.5.0)
+    slop (3.6.0)
     spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -334,7 +347,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    temple (0.6.7)
+    temple (0.6.8)
     term-ansicolor (1.3.0)
       tins (~> 1.0)
     terminal-table (1.4.5)
@@ -351,7 +364,7 @@ GEM
       coffee-rails
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
-    uglifier (2.5.1)
+    uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unicorn (4.8.3)
@@ -359,14 +372,14 @@ GEM
       rack
       raindrops (~> 0.7)
     uniform_notifier (1.6.2)
-    virtus (1.0.2)
+    virtus (1.0.3)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
-      descendants_tracker (~> 0.0.3)
-      equalizer (~> 0.0.9)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
     warden (1.2.3)
       rack (>= 1.0)
-    websocket-driver (0.3.3)
+    websocket-driver (0.3.4)
     xpath (2.0.0)
       nokogiri (~> 1.3)
     ya2yaml (0.31)
@@ -379,11 +392,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activejob!
   bourbon
   brakeman
   bullet
-  cancancan (~> 1.8.0)
-  coffee-rails (~> 4.0.0)
+  cancancan (~> 1.9.0)
   coveralls
   database_cleaner
   decent_exposure
@@ -391,7 +404,7 @@ DEPENDENCIES
   draper (~> 1.3.0)
   fabrication
   ffaker
-  grape (~> 0.7.0)
+  grape (~> 0.8.0)
   grape-entity
   grape-swagger
   guard

@@ -13,13 +13,9 @@ gem 'neat'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
 
 # API builder
-gem 'grape', '~> 0.7.0'
+gem 'grape', '~> 0.8.0'
 # Build JSON APIs with ease.
 gem 'grape-entity'
 # API documentation
@@ -38,11 +34,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
 
 # Use Unicorn as the app server
-gem 'unicorn'
+gem 'unicorn', require: false
+
+# Background jobs
+gem 'activejob', github: 'rails/activejob'
 
 # User management
 gem 'devise', '~> 3.2.3'
-gem 'cancancan', '~> 1.8.0'
+gem 'cancancan', '~> 1.9.0'
 gem 'rolify', '~> 3.4.0'
 
 # OAuth sign up
@@ -107,9 +106,9 @@ group :development do
 end
 
 # Fixtures replacement
-gem 'fabrication',  group: [:development,  :test]
-gem 'ffaker',       group: [:development,  :test]
-gem 'konacha',      group: [:development,  :test]
+gem 'fabrication',  group: [:development, :test]
+gem 'ffaker',       group: [:development, :test]
+gem 'konacha',      group: [:development, :test]
 
 group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
