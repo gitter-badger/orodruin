@@ -7,12 +7,6 @@ Rails.application.routes.draw do
     root 'posts#index'
   end
 
-  if Rails.env.development?
-    namespace :doc do
-      mount Kss::Engine => '/styles'
-    end
-  end
-
   mount Orodruin::API => '/api'
 
   root to: 'blog/posts#index'

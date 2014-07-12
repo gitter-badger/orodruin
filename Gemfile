@@ -1,15 +1,13 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.4'
 
 gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
-
-gem 'bourbon'
-gem 'neat'
+gem 'bootstrap-sass'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -69,6 +67,9 @@ gem 'redcarpet', '~> 3.1.1'
 gem 'localeapp'
 gem 'rails-i18n', '~> 4.0.0'
 
+# Track emails
+gem 'mandriller'
+
 group :doc do
   gem 'yard', require: false
   gem 'yard-tomdoc', require: false
@@ -77,9 +78,6 @@ end
 group :development do
   # Better console
   gem 'pry-rails'
-
-  # Stylesheets documentation
-  gem 'kss-rails'
 
   # Style checking
   gem 'rubocop', require: false

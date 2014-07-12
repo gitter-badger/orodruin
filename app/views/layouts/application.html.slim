@@ -21,6 +21,6 @@ html
     meta name="msapplication-TileImage" content="/mstile-144x144.png"
   body
     = render 'components/navigation'
-    .container
+    .content-fluid
       == yield
     = javascript_include_tag 'application', 'data-turbolinks-track' => true

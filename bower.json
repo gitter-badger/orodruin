@@ -2,7 +2,6 @@
   "name": "orodruin",
   "version": "0.0.0",
   "dependencies": {
-    "normalize-css": "~3.0.0",
     "nprogress": "~0.1.3",
     "d3": "~3.4.4",
     "jquery-ujs": "*",
