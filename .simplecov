@@ -15,6 +15,4 @@ SimpleCov.start 'rails' do
   add_group 'Mailers',      'app/mailers'
   add_group 'Uploaders',    'app/uploaders'
   add_group 'Libraries',    'lib'
-
-  merge_timeout 3600
 end

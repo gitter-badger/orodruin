@@ -10,9 +10,7 @@ class UserDecorator < Draper::Decorator
   #
   # include_nickname - should quoted nickname (if present) be included or not
   def name(include_nickname = false)
-    nickname = if include_nickname && object.nickname
-                 "\"#{object.nickname}\""
-               end
+    nickname = "\"#{object.nickname}\"" if include_nickname && object.nickname
 
     [object.first_name, nickname, object.last_name].compact.join(' ')
   end

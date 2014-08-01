@@ -430,6 +430,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   simple_form (~> 3.0.1)
+  simplecov
   slim-rails
   spring
   turbolinks

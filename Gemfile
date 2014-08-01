@@ -118,6 +118,7 @@ group :test do
   gem 'poltergeist'
 
   # Coverage reports
+  gem 'simplecov', require: false
   gem 'coveralls', require: false
 
   gem 'database_cleaner'
