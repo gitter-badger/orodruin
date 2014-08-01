@@ -35,7 +35,7 @@ You will need:
 
 - \*NIX system to run (on Windows I suggest you to create VM)
 - [Bower][bower]
-- Ruby 2.1.1
+- Ruby 2.1.2
 - Bundler
 
 The best way to install Ruby is using [rbenv][rbenv].
