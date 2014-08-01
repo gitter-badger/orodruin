@@ -6,7 +6,6 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
   SimpleCov::Formatter::HTMLFormatter,
   Coveralls::SimpleCov::Formatter
 ]
-SimpleCov.use_merging true
 SimpleCov.start 'rails' do
   # Groups
   add_group 'Controllers',  'app/controllers'
