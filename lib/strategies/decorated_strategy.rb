@@ -11,9 +11,7 @@ class DecoratedStrategy < DecentExposure::StrongParametersStrategy
     if decorator
       decorator.new(instance)
     else
-      instance.try(:decorate)
+      instance.try(:decorate) || instance
     end
-  rescue
-    super
   end
 end

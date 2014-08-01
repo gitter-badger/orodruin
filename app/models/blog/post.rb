@@ -5,11 +5,11 @@ class Blog::Post < ActiveRecord::Base
 
   protected
 
+  attr_writer :text
+
   def parse_text
     parser = ContentParser.new
 
     self[:text] = parser.call(text_raw)
   end
-
-  def text=; end
 end
