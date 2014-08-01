@@ -14,5 +14,6 @@ SimpleCov.start 'rails' do
   add_group 'Helpers',      'app/helpers'
   add_group 'Mailers',      'app/mailers'
   add_group 'Uploaders',    'app/uploaders'
-  add_group 'Libraries',    'lib'
+  add_group 'Jobs',         'app/jobs'
+  add_group 'Services',     'app/services'
 end
