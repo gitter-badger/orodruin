@@ -1,17 +1,28 @@
 # Public: Return text parsed using any Lightweight Markup Language. Current
 # implementation use Markdown (by Redcarpet gem).
 #
+# Parser flags enabled:
+#
+#   - `autolink`
+#   - `quote`
+#
+# Renderer flags enabled:
+#
+#   - `no_styles`
+#   - `safe_link_only`
+#   - `with_toc_data`
+#
 # Example:
 #
 #     parser = ContentParser.new
 #
-#     parser.parse('Lorem ipsum') #=> '<p>Lorem ipsum</p>'
+#     parser.call('Lorem ipsum') #=> '<p>Lorem ipsum</p>'
 class ContentParser
   # Parse given text.
   #
   # Returns parsed text.
   def call(text)
-    parser.render(text)
+    parser.render(text.to_s)
   end
 
   protected
