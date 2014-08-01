@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 20140517172518) do
   add_index "auth_providers", ["user_id"], name: "index_auth_providers_on_user_id", using: :btree
 
   create_table "blog_posts", force: true do |t|
-    t.string   "text_raw"
-    t.string   "text"
+    t.text     "text_raw"
+    t.text     "text"
     t.string   "title"
     t.integer  "author_id"
     t.datetime "created_at"
