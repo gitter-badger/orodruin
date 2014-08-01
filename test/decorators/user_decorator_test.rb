@@ -35,4 +35,29 @@ describe UserDecorator do
       subject.attribute('src').value.must_equal url
     end
   end
+
+  describe '#name' do
+    before do
+      user.first_name = 'Eddard'
+      user.last_name  = 'Stark'
+    end
+
+    describe 'without nickname' do
+      it 'match user full name' do
+        subject.name.must_match 'Eddard Stark'
+      end
+
+      it 'match user full name when nickname should be shown' do
+        subject.name(true).must_match 'Eddard Stark'
+      end
+    end
+
+    describe 'with nickname' do
+      before { user.nickname = 'Ned' }
+
+      it 'match full user name if requested with nickname' do
+        subject.name(true).must_match 'Eddard "Ned" Stark'
+      end
+    end
+  end
 end

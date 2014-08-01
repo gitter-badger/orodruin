@@ -6,6 +6,17 @@
 class UserDecorator < Draper::Decorator
   delegate_all
 
+  # Public: Display user full name
+  #
+  # include_nickname - should quoted nickname (if present) be included or not
+  def name(include_nickname = false)
+    nickname = if include_nickname && object.nickname
+                 "\"#{object.nickname}\""
+               end
+
+    [object.first_name, nickname, object.last_name].compact.join(' ')
+  end
+
   # Public: Return Gravatar URL for decorated object
   #
   # options - hash containing URL options for Gravatar. Description of them can

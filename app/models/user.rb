@@ -26,8 +26,4 @@ class User < ActiveRecord::Base
   has_many :conventions, through: :participations
 
   validates :nickname, uniqueness: true
-
-  def name
-    "#{first_name} #{last_name}"
-  end
 end
