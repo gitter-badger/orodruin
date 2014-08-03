@@ -1,7 +1,6 @@
 /*
  * Here load any external libraries (added to bower.json)
  *
- *= require normalize-css
  *= require bootstrap
  *
  *= require_self

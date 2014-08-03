@@ -8,10 +8,14 @@ class DecoratedStrategy < DecentExposure::StrongParametersStrategy
     decorator = options[:decorator]
     instance = super
 
+    return instance if options.key?(:decorator) && decorator.nil?
+
     if decorator
       decorator.new(instance)
     else
-      instance.try(:decorate) || instance
+      instance.decorate
     end
+  rescue
+    super
   end
 end
