@@ -4,3 +4,5 @@
 *.eot binary -delta
 *.ttf binary -delta
 *.woff binary -delta
+
+*.webm binary -delta
