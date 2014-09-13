@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/hauleth/orodruin/badge.png)](https://coveralls.io/r/hauleth/orodruin)
 [![Inline docs](http://inch-ci.org/github/hauleth/orodruin.png)](http://inch-ci.org/github/hauleth/orodruin)
 [![Dependency Status](https://gemnasium.com/hauleth/orodruin.svg)](https://gemnasium.com/hauleth/orodruin)
-[![security](https://hakiri.io/github/hauleth/orodruin/master.svg)](https://hakiri.io/github/hauleth/orodruin/master)
+[![Security](https://hakiri.io/github/hauleth/orodruin/master.svg)](https://hakiri.io/github/hauleth/orodruin/master)
 [![Stories in Ready](https://badge.waffle.io/hauleth/orodruin.png?label=ready)](https://waffle.io/hauleth/orodruin)
 
 Easy convention management system.

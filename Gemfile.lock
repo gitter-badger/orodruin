@@ -151,9 +151,6 @@ GEM
     guard-minitest (2.3.1)
       guard (~> 2.0)
       minitest (>= 3.0)
-    guard-rubocop (1.1.0)
-      guard (~> 2.0)
-      rubocop (~> 0.20)
     haml (4.0.5)
       tilt
     hashie (3.2.0)
@@ -489,7 +486,6 @@ DEPENDENCIES
   guard-brakeman
   guard-bundler
   guard-minitest
-  guard-rubocop
   konacha
   localeapp
   mandriller

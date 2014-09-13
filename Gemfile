@@ -47,6 +47,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
+# gem 'omniauth-vkontakte'
 
 # Simplify controllers by decent_exposure
 gem 'decent_exposure'
@@ -100,7 +101,6 @@ group :development do
   gem 'guard-brakeman'
   gem 'guard-bundler'
   gem 'guard-minitest'
-  gem 'guard-rubocop'
 end
 
 # Fixtures replacement
