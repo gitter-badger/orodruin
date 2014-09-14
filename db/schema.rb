@@ -11,20 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140501145459) do
+ActiveRecord::Schema.define(version: 20140913174244) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "auth_providers", force: true do |t|
     t.integer  "user_id"
-    t.string   "token"
     t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "uid"
   end
 
-  add_index "auth_providers", ["type", "token"], name: "index_auth_providers_on_type_and_token", using: :btree
   add_index "auth_providers", ["type"], name: "index_auth_providers_on_type", using: :btree
   add_index "auth_providers", ["user_id"], name: "index_auth_providers_on_user_id", using: :btree
 

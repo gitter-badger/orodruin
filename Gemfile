@@ -77,9 +77,6 @@ group :doc do
 end
 
 group :development do
-  # Better console
-  gem 'pry-rails'
-
   # Style checking
   gem 'rubocop', require: false
 
@@ -103,10 +100,16 @@ group :development do
   gem 'guard-minitest'
 end
 
-# Fixtures replacement
-gem 'fabrication',  group: [:development, :test]
-gem 'ffaker',       group: [:development, :test]
-gem 'konacha',      group: [:development, :test]
+group :development, :test do
+  # Better console
+  gem 'pry-rails'
+  gem 'pry-byebug'
+
+  # Fixtures replacement
+  gem 'fabrication'
+  gem 'ffaker'
+  gem 'konacha'
+end
 
 group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit

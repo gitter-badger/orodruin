@@ -17,6 +17,8 @@ require 'minitest/extra/matchers'
 
 DatabaseCleaner.strategy = :transaction
 
+Dir['test/support/*'].each { |file| load file }
+
 class MiniTest::Spec
   include Minitest::Extra::Matchers::Subject
   include Minitest::Extra::Matchers::Received
