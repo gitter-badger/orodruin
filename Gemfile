@@ -36,7 +36,7 @@ gem 'unicorn', require: false
 gem 'activejob', '~> 4.2.0.beta1'
 
 # User management
-gem 'devise', '~> 3.2.3'
+gem 'devise', '~> 3.3.0'
 gem 'cancancan', '~> 1.9.0'
 gem 'rolify', '~> 3.4.0'
 
