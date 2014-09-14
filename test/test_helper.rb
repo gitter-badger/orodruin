@@ -7,7 +7,8 @@ require 'rails/test_help'
 require 'minitest/spec'
 
 # Nicer output
-require 'minitest/pride'
+require 'minitest/reporters'
+MiniTest::Reporters.use!(MiniTest::Reporters::SpecReporter.new)
 
 # RR mocking library
 require 'rr'

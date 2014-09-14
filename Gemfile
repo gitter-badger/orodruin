@@ -113,6 +113,7 @@ group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
   # gem 'minitest-spec-rails'
   gem 'minitest-extra-matchers'
+  gem 'minitest-reporters'
   # Nicer mocking library
   gem 'rr', require: false
 
