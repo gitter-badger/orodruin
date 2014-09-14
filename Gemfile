@@ -35,7 +35,7 @@ gem 'spring', group: :development
 gem 'unicorn', require: false
 
 # Background jobs
-gem 'activejob', github: 'rails/activejob'
+gem 'activejob', '~> 4.2.0.beta1'
 
 # User management
 gem 'devise', '~> 3.2.3'
