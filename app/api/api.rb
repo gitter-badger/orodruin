@@ -3,8 +3,6 @@ class API < Grape::API
 
   mount Users
 
-  add_swagger_documentation
-
   before do
     header['Access-Control-Allow-Origin'] = '*'
     header['Access-Control-Request-Method'] = '*'

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
+gem 'rails', '4.1.6'
 
 gem 'pg'
 
@@ -13,11 +13,9 @@ gem 'bootstrap-sass'
 gem 'uglifier', '>= 1.3.0'
 
 # API builder
-gem 'grape', '~> 0.8.0'
+gem 'grape', '~> 0.9.0'
 # Build JSON APIs with ease.
 gem 'grape-entity'
-# API documentation
-gem 'grape-swagger'
 
 # Use jquery as the JavaScript library
 # gem 'jquery-rails'
