@@ -9,6 +9,7 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
 SimpleCov.start 'rails' do
   # Groups
   add_group 'Controllers',  'app/controllers'
+  add_group 'API',          'app/api'
   add_group 'Models',       'app/models'
   add_group 'Decorators',   'app/decorators'
   add_group 'Helpers',      'app/helpers'

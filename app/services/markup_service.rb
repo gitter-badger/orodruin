@@ -14,10 +14,10 @@
 #
 # Example:
 #
-#     parser = ContentParser.new
+#     parser = MarkupService.new
 #
 #     parser.call('Lorem ipsum') #=> '<p>Lorem ipsum</p>'
-class ContentParser
+class MarkupService
   # Parse given text.
   #
   # Returns parsed text.

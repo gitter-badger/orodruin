@@ -8,7 +8,7 @@ require 'minitest/spec'
 
 # Nicer output
 require 'minitest/reporters'
-MiniTest::Reporters.use!(MiniTest::Reporters::SpecReporter.new)
+MiniTest::Reporters.use!(MiniTest::Reporters::SpecReporter.new) unless ENV['CI']
 
 # RR mocking library
 require 'rr'
