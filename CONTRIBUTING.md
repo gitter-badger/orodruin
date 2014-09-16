@@ -40,9 +40,6 @@ Testing library linked. You can suggest one or wait till we choose one.
 ### Designer
 
 - We use [Sass][sass] across whole project. Please, keep that (no SCSS).
-- As mixin library we use [Bourbon][bourbon] with [Neat][neat]. In my honest
-  opinion Compass is overbloated and provide no functionality that Bourbon
-  don't cover in much simpler way.
 - Use [Idiomatic CSS Style Guide][idiomatic].
 - Document your styles using [KSS][kss].
 - Install dependencies using Bower.
