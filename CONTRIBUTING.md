@@ -31,7 +31,7 @@ creating pull-request, read this.
 - Style can be checked using `gulp syntax-check`.
 - Do not edit `gulpfile.js` directly. All assets are compiled using Sprockets
   so Gulp tasks won't be run on production. If something needed write an
-  [issue][issue].
+  [issue][issues].
 - Do not use RequireJS or similar. We have Sprockets with it's `require`
   and `require_tree`.
 
