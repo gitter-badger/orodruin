@@ -51,7 +51,7 @@ gem 'omniauth-google-oauth2'
 gem 'decent_exposure'
 
 # Simplify views using decorators
-gem 'draper', '~> 1.3.0'
+gem 'draper', '~> 1.4.0'
 
 # Nicer views template engine
 gem 'slim-rails'
@@ -111,7 +111,6 @@ end
 
 group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
-  # gem 'minitest-spec-rails'
   gem 'minitest-extra-matchers'
   gem 'minitest-reporters'
   # Nicer mocking library
