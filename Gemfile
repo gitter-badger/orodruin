@@ -96,6 +96,7 @@ group :development do
   gem 'guard-brakeman'
   gem 'guard-bundler'
   gem 'guard-minitest'
+  gem 'guard-konacha'
 end
 
 group :development, :test do

@@ -146,6 +146,9 @@ GEM
     guard-bundler (2.0.0)
       bundler (~> 1.0)
       guard (~> 2.2)
+    guard-konacha (1.0.5)
+      guard (>= 1.1)
+      konacha (>= 3.0)
     guard-minitest (2.3.2)
       guard (~> 2.0)
       minitest (>= 3.0)
@@ -404,6 +407,7 @@ DEPENDENCIES
   guard-bower
   guard-brakeman
   guard-bundler
+  guard-konacha
   guard-minitest
   konacha
   localeapp

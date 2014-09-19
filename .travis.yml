@@ -8,4 +8,4 @@ env:
 before_script:
   - psql -U postgres -c 'CREATE DATABASE orodruin_test;'
 script:
-  bin/rake test:all
+  bin/rake test:all konacha:run
