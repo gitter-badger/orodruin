@@ -48,6 +48,20 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/bryanrite/cancancan/wiki/Defining-Abilities
+
+    [Post, Convention].each do |model|
+      can :read, model
+    end
+  end
+
+  def admin
+    can :manage, :all
+  end
+
+  def organisator
+    can :manage, Post
+    can :manage, Participant
+    can :manage, Role
   end
 
   protected

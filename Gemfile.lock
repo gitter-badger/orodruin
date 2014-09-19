@@ -68,6 +68,11 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     cliver (0.3.2)
@@ -192,6 +197,8 @@ GEM
       railties (>= 3.0.0, < 5.0.0)
     method_source (0.8.2)
     mime-types (2.3)
+    mini_magick (3.8.1)
+      subexec (~> 0.2.1)
     mini_portile (0.6.0)
     minitest (5.4.1)
     minitest-extra-matchers (0.0.6)
@@ -233,6 +240,10 @@ GEM
     omniauth-twitter (1.0.1)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
+    omniauth-vkontakte (1.3.3)
+      multi_json
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
     orm_adapter (0.5.0)
     parser (2.2.0.pre.4)
       ast (>= 1.1, < 3.0)
@@ -346,6 +357,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    subexec (0.2.3)
     temple (0.6.8)
     term-ansicolor (1.3.0)
       tins (~> 1.0)
@@ -394,6 +406,7 @@ DEPENDENCIES
   brakeman
   bullet
   cancancan (~> 1.9.0)
+  carrierwave
   coveralls
   database_cleaner
   decent_exposure
@@ -413,12 +426,14 @@ DEPENDENCIES
   localeapp
   mandriller
   meta_request
+  mini_magick
   minitest-extra-matchers
   minitest-reporters
   omniauth
   omniauth-facebook
   omniauth-google-oauth2
   omniauth-twitter
+  omniauth-vkontakte
   pg
   poltergeist
   pry-byebug

@@ -35,6 +35,10 @@ gem 'unicorn', require: false
 # Background jobs
 gem 'activejob', '~> 4.2.0.beta1'
 
+# Photos uploader
+gem 'carrierwave'
+gem 'mini_magick'
+
 # User management
 gem 'devise', '~> 3.3.0'
 gem 'cancancan', '~> 1.9.0'
@@ -45,7 +49,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
-# gem 'omniauth-vkontakte'
+gem 'omniauth-vkontakte'
 
 # Simplify controllers by decent_exposure
 gem 'decent_exposure'
@@ -107,6 +111,8 @@ group :development, :test do
   # Fixtures replacement
   gem 'fabrication'
   gem 'ffaker'
+
+  # JavaScript test runner
   gem 'konacha'
 end
 
@@ -114,6 +120,7 @@ group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
   gem 'minitest-extra-matchers'
   gem 'minitest-reporters'
+
   # Nicer mocking library
   gem 'rr', require: false
 
