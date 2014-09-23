@@ -34,6 +34,7 @@ gem 'unicorn', require: false
 
 # Background jobs
 gem 'activejob', '~> 4.2.0.beta1'
+gem 'sidekiq'
 
 # Photos uploader
 gem 'carrierwave'
