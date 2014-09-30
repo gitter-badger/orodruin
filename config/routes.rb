@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     root 'posts#index'
   end
 
-  mount Orodruin::API => '/api'
+  mount API => '/api'
 
   root to: 'blog/posts#index'
 end
