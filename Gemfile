@@ -80,6 +80,9 @@ group :doc do
 end
 
 group :development do
+  # Process management
+  gem 'foreman', require: false
+
   # Style checking
   gem 'rubocop', require: false
 
