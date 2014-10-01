@@ -108,6 +108,9 @@ group :development do
 end
 
 group :development, :test do
+  # Acceptance tests
+  gem 'spinach-rails'
+
   # Better console
   gem 'pry-rails'
   gem 'pry-byebug'
