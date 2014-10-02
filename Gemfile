@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.0.beta2'
 
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'bootstrap-sass'
 
 # Use Uglifier as compressor for JavaScript assets
@@ -33,7 +33,6 @@ gem 'spring', group: :development
 gem 'unicorn', require: false
 
 # Background jobs
-gem 'activejob', '~> 4.2.0.beta1'
 gem 'sidekiq'
 
 # Photos uploader
@@ -80,6 +79,8 @@ group :doc do
 end
 
 group :development do
+  gem 'web-console', '~> 2.0.beta4'
+
   # Process management
   gem 'foreman', require: false
 
