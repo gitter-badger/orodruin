@@ -1,3 +1,16 @@
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: ee69d41fc1707c5b7b2630034dc1d120b6200f56
+  branch: lm-rails-4-2
+  specs:
+    devise (3.3.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -77,6 +90,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    capybara_minitest_spec (1.0.3)
+      capybara (>= 2)
+      minitest (>= 2)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -110,12 +126,6 @@ GEM
     decent_exposure (2.3.2)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
-    devise (3.3.0)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     docile (1.1.5)
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
@@ -335,6 +345,8 @@ GEM
     redis-namespace (1.5.1)
       redis (~> 3.0, >= 3.0.4)
     request_store (1.1.0)
+    responders (2.0.0)
+      railties (>= 4.2.0.alpha, < 5)
     rest-client (1.7.2)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
@@ -456,11 +468,12 @@ DEPENDENCIES
   brakeman
   bullet
   cancancan (~> 1.9.0)
+  capybara_minitest_spec
   carrierwave
   coveralls
   database_cleaner
   decent_exposure
-  devise (~> 3.3.0)
+  devise!
   draper (~> 1.4.0)
   fabrication
   ffaker

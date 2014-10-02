@@ -40,7 +40,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 # User management
-gem 'devise', '~> 3.3.0'
+gem 'devise', github: 'plataformatec/devise', branch: 'lm-rails-4-2'
 gem 'cancancan', '~> 1.9.0'
 gem 'rolify', '~> 3.4.0'
 
@@ -128,6 +128,7 @@ group :test do
   # Use MiniTest::Spec instead of MiniTest::Unit
   gem 'minitest-extra-matchers'
   gem 'minitest-reporters'
+  gem 'capybara_minitest_spec'
 
   # Nicer mocking library
   gem 'rr', require: false
