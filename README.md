@@ -1,4 +1,5 @@
 # Orodruin
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/hauleth/orodruin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![Build Status](https://travis-ci.org/hauleth/orodruin.svg?branch=master)](https://travis-ci.org/hauleth/orodruin)
 [![Code Climate](https://codeclimate.com/github/hauleth/orodruin.png)](https://codeclimate.com/github/hauleth/orodruin)
